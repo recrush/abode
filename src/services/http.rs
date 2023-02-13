@@ -35,13 +35,13 @@ use futures::stream;
 use futures::try_join;
 use futures::AsyncWriteExt;
 use futures::StreamExt;
-use log::error;
-use log::warn;
 use opendal::raw::input::into_stream;
 use opendal::raw::BytesContentRange;
 use opendal::raw::BytesRange;
 use opendal::Operator;
 use percent_encoding::percent_decode;
+use tracing::error;
+use tracing::warn;
 
 use crate::env;
 

@@ -22,7 +22,7 @@ use clap::crate_version;
 use clap::Command;
 
 pub async fn main() -> Result<()> {
-    env_logger::init();
+    tracing_subscriber::fmt::init();
 
     match cli().get_matches().subcommand() {
         Some(("http", _)) => crate::services::http::Service::new().await?.start().await?,
