@@ -1,6 +1,6 @@
 // Copyright 2023 Recrush Labs.
 //
-// Derived from opendal/oay. Copyright 2022 Datafuse Labs.
+// Derived from opendal/abode. Copyright 2022 Datafuse Labs.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -21,23 +21,23 @@ use opendal::services;
 use opendal::Operator;
 use opendal::Scheme;
 
-pub static OAY_ADDR: &str = "OAY_ADDR";
-pub static OAY_BACKEND_TYPE: &str = "OAY_BACKEND_TYPE";
+pub static ABODE_ADDR: &str = "ABODE_ADDR";
+pub static ABODE_BACKEND_TYPE: &str = "ABODE_BACKEND_TYPE";
 
-pub fn get_oay_addr() -> String {
-    env::var(OAY_ADDR).unwrap_or_else(|_| "127.0.0.1:8080".to_string())
+pub fn get_abode_addr() -> String {
+    env::var(ABODE_ADDR).unwrap_or_else(|_| "127.0.0.1:8080".to_string())
 }
 
-pub fn get_oay_backend_type() -> Result<Scheme> {
-    Ok(env::var(OAY_BACKEND_TYPE)
+pub fn get_abode_backend_type() -> Result<Scheme> {
+    Ok(env::var(ABODE_BACKEND_TYPE)
         .unwrap_or_else(|_| "fs".to_string())
         .parse()?)
 }
 
-pub async fn get_oay_operator() -> Result<Operator> {
-    let scheme = get_oay_backend_type()?;
+pub async fn get_abode_operator() -> Result<Operator> {
+    let scheme = get_abode_backend_type()?;
 
-    let prefix = format!("oay_backend_{scheme}_");
+    let prefix = format!("abode_backend_{scheme}_");
     let envs = env::vars().filter_map(move |(k, v)| {
         k.to_lowercase()
             .strip_prefix(&prefix)

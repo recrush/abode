@@ -56,8 +56,8 @@ pub struct Service {
 impl Service {
     pub async fn new() -> Result<Service> {
         Ok(Service {
-            addr: env::get_oay_addr(),
-            op: env::get_oay_operator().await?,
+            addr: env::get_abode_addr(),
+            op: env::get_abode_operator().await?,
         })
     }
 
