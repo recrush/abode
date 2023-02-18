@@ -1,10 +1,10 @@
 [package]
-name = "abode"
-version = "0.0.0"
 description = "The Place Where Data Lives"
 edition = "2021"
 keywords = ["storage", "data", "s3", "fs", "azblob"]
 license = "Apache-2.0"
+name = "abode"
+version = "0.0.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
