@@ -1,3 +1,3 @@
-# Catadogs
+# abode
 
-Another Data Catalog for People Who Hate Data Catalogs
+The Place Where Data Lives
