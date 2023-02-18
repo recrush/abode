@@ -18,6 +18,16 @@ export ABODE_BACKEND_FS_ROOT=/tmp/
 
 Check out the [CONTRIBUTING.md](./CONTRIBUTING.md) guide for more details on getting started with contributing to this project.
 
+## Why "abode"?
+
+**[Abode Definition & Meaning - Merriam-Webster]**
+
+> noun (ə-ˈbōd)
+>
+> Synonyms of abode: the place where one lives : home
+
+[Abode Definition & Meaning - Merriam-Webster]: https://www.merriam-webster.com/dictionary/abode
+
 ## Credits
 
 - The initial code is derived from [oay](https://crates.io/crates/oay), which is the OpenDAL gateway.
