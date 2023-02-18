@@ -1,7 +1,7 @@
 [package]
-name = "catadogs"
+name = "abode"
 version = "0.0.0"
-description = "Another Data Catalog for People Who Hate Data Catalogs"
+description = "The Place Where Data Lives"
 edition = "2021"
 keywords = ["storage", "data", "s3", "fs", "azblob"]
 license = "Apache-2.0"

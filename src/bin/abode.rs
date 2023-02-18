@@ -18,5 +18,5 @@ use anyhow::Result;
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    catadogs::commands::main().await
+    abode::commands::main().await
 }
