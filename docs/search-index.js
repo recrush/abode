@@ -1,0 +1,5 @@
+var searchIndex = JSON.parse('{\
+"abode":{"doc":"","t":[0,0,5,0,3,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11],"n":["commands","services","main","http","Service","borrow","borrow_mut","clone","clone_into","compat","compat_mut","compat_ref","fmt","from","into","new","start","to_owned","try_from","try_into","type_id","vzip"],"q":["abode","","abode::commands","abode::services","abode::services::http","","","","","","","","","","","","","","","","",""],"d":["","","","","","","","","","","","","","Returns the argument unchanged.","Calls <code>U::from(self)</code>.","","","","","","",""],"i":[0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"f":[0,0,[[],1],0,0,[[]],[[]],[2,2],[[]],[[],3],[[],3],[[],3],[[2,4],5],[[]],[[]],[[],[[6,[2]]]],[2,6],[[]],[[],7],[[],7],[[],8],[[]]],"p":[[6,"Result"],[3,"Service"],[3,"Compat"],[3,"Formatter"],[6,"Result"],[6,"Result"],[4,"Result"],[3,"TypeId"]]}\
+}');
+if (typeof window !== 'undefined' && window.initSearch) {window.initSearch(searchIndex)};
+if (typeof exports !== 'undefined') {exports.searchIndex = searchIndex};
