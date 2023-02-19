@@ -20,7 +20,10 @@ jobs:
       - uses: actions/checkout@v3
       - uses: Swatinem/rust-cache@v2
       - name: Build docs
-        run: cargo doc --no-deps --all-features
+        run: |
+          cargo doc --no-deps --all-features
+          rm -fv target/doc/.lock
+          rm -f target/doc/index.html && echo '<meta http-equiv="refresh" content="0;url=abode/">' > target/doc/index.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
@@ -28,4 +31,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./target/doc
           keep_files: false
-          destination_dir: docs
